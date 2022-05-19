@@ -32,3 +32,28 @@ body {
 .icon {
   font-size: 4rem;
 }
+
+.emojis {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.emoji {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.icon {
+    order: -1;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+a {
+    flex-grow: 1;
+    align-self: flex-end;
+}
